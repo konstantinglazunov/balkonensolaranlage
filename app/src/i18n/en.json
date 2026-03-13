@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "title": "SolarSmart - Intelligent Balcony Solar Solutions",
+    "description": "Rationally reduce electricity costs with intelligent balcony solar systems. We analyze your situation and recommend the optimal system setup."
+  },
+  "language": {
+    "de": "DE",
+    "en": "EN",
+    "ru": "RU"
+  },
+  "hero_title": "Rationally\nreduce electricity costs\nwith intelligent\nbalcony solar systems",
+  "hero_subtitle": "RATIONAL ENERGY INDEPENDENCE",
+  "cta_button": "Free balcony analysis",
+  "pricing_title": "Calculate your savings potential",
+  "contact_title": "Free balcony analysis",
+  "common": {
+    "backToHome": "Back to homepage",
+    "privacyPolicy": "Privacy policy",
+    "subtotal": "Subtotal"
+  },
+  "navigation": {
+    "brandName": "SolarSmart",
+    "searchPlaceholder": "Search...",
+    "cartEmptyText": "Your analysis cart is empty",
+    "cartCheckoutText": "Request free analysis",
+    "continueShoppingText": "Continue exploring",
+    "menuLinks": {
+      "why": "Why rational",
+      "how": "How it works",
+      "installation": "Installation",
+      "calculator": "Calculator",
+      "faq": "FAQ",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "ctaSecondary": "Calculate savings potential"
+  },
+  "subHero": {
+    "tag": "THE RATIONAL SOLUTION",
+    "heading": "Why a balcony solar system with battery storage makes sense",
+    "paragraphs": [
+      "Balcony solar systems are one of the most rational ways to cut electricity costs. But without battery storage, potential remains unused.",
+      "Solar power is only available when the sun shines. Household demand is highest in the morning and evening - exactly when solar production is low.",
+      "With battery storage, solar energy generated during the day is stored and used later. This means: higher self-consumption, fewer grid purchases, faster payback."
+    ],
+    "linkText": "Learn more",
+    "stats": {
+      "saving": "Electricity cost savings",
+      "feedIn": "Max. feed-in power",
+      "payback": "Average payback"
+    },
+    "years": "years"
+  },
+  "energyFlow": {
+    "tag": "ENERGY FLOW",
+    "heading": "How the system works",
+    "description": "Understand how solar energy is generated, stored, and used intelligently.",
+    "scenarios": {
+      "day": {
+        "title": "Daytime",
+        "description": "Solar power is generated, consumed directly, and excess energy is stored in the battery.",
+        "imageAlt": "During the day, the solar system charges the battery and powers the home"
+      },
+      "night": {
+        "title": "Evening & Night",
+        "description": "The battery powers the household when solar generation is not available.",
+        "imageAlt": "In the evening and at night, the battery powers the home"
+      }
+    },
+    "cards": {
+      "monitoringTitle": "Real-time monitoring",
+      "monitoringDescription": "Keep your energy production in view",
+      "batteryTitle": "Battery control",
+      "batteryDescription": "Intelligent charging and discharging",
+      "reportsTitle": "Energy reports",
+      "reportsDescription": "Detailed insights and savings"
+    }
+  },
+  "videoSection": {
+    "tag": "EFFICIENT ALL YEAR ROUND",
+    "heading": "The system works all year.",
+    "paragraphs": [
+      "Even in winter, modern solar panels continue to generate electricity. With battery storage, this energy is used with maximum efficiency.",
+      "When winter solar generation is lower, the battery can additionally operate in combination with a dynamic tariff. It automatically charges at night when electricity prices are low and is used during the day when tariffs are higher.",
+      "Intelligent energy management selects the most economical operating mode and optimally combines solar generation, battery storage, and electricity tariffs."
+    ],
+    "cta": "More about efficiency"
+  },
+  "products": {
+    "tag": "FLEXIBLE MOUNTING",
+    "heading": "Installable anywhere",
+    "description": "Solar panels can be mounted in different locations - perfectly adapted to your space.",
+    "viewAllText": "All options",
+    "addToCartText": "Learn more",
+    "addedToCartText": "Added for analysis",
+    "categories": {
+      "all": "All",
+      "balcony": "Balcony",
+      "wall": "Wall",
+      "roof": "Roof"
+    },
+    "items": {
+      "balconyMount": "Balcony railing mount",
+      "wallMount": "Wall mount",
+      "roofMount": "Garage roof mount"
+    }
+  },
+  "features": {
+    "items": [
+      {
+        "title": "No permit required",
+        "description": "Plug-in solar devices follow simplified rules. Only registration in the market data register is required - no prior grid operator approval."
+      },
+      {
+        "title": "Also for rental apartments",
+        "description": "The system is compact, installation is non-invasive, and connection is via a standard socket. Ideal for tenants."
+      },
+      {
+        "title": "Portable when moving",
+        "description": "The system remains your property. It can be easily dismantled and reinstalled at a new location."
+      },
+      {
+        "title": "24/7 monitoring",
+        "description": "Full control of your energy production and storage via app. Real-time monitoring and intelligent control."
+      }
+    ]
+  },
+  "calculator": {
+    "tag": "SOLAR CALCULATOR",
+    "heading": "Calculate your savings potential",
+    "description": "Estimate how quickly a balcony solar system pays off - based on your individual situation.",
+    "yourData": "Your data",
+    "locationLabel": "Location in Germany",
+    "orientationLabel": "Balcony orientation",
+    "panelCountLabel": "Number of solar panels",
+    "panelMin": "1 panel",
+    "panelMax": "4 panels",
+    "batteryCapacityLabel": "Battery capacity (kWh)",
+    "batteryMin": "No battery",
+    "batteryMax": "5 kWh",
+    "monthlyConsumptionLabel": "Monthly electricity usage (kWh)",
+    "electricityPriceLabel": "Current electricity price (€/kWh)",
+    "dynamicTariffTitle": "Dynamic electricity tariff",
+    "dynamicTariffSubtitle": "We help with switching",
+    "metrics": {
+      "annualProduction": "Annual production",
+      "annualSavings": "Annual savings",
+      "selfConsumption": "Self-consumption",
+      "payback": "Payback",
+      "years": "years"
+    },
+    "chartTitle": "Cumulative savings over 20 years",
+    "chartLegend": {
+      "savings": "Savings",
+      "systemCost": "System cost"
+    },
+    "cta": "Request free analysis",
+    "locations": {
+      "berlin": "Berlin",
+      "munich": "Munich",
+      "hamburg": "Hamburg",
+      "cologne": "Cologne",
+      "frankfurt": "Frankfurt",
+      "stuttgart": "Stuttgart"
+    },
+    "orientations": {
+      "south": "South",
+      "southeast": "South-east",
+      "southwest": "South-west",
+      "east": "East",
+      "west": "West"
+    }
+  },
+  "blog": {
+    "tag": "DYNAMIC ELECTRICITY TARIFFS",
+    "heading": "Trade electricity intelligently",
+    "viewAllText": "All articles",
+    "readMoreText": "Learn more",
+    "posts": [
+      {
+        "title": "Dynamic tariff + intelligent battery",
+        "date": "2026",
+        "excerpt": "The system continuously analyzes electricity prices, solar production forecasts, and household demand. When prices are low, the battery charges; when prices rise, stored energy is used."
+      },
+      {
+        "title": "We help with tariff switching",
+        "date": "2026",
+        "excerpt": "No dynamic tariff yet? We support your switch to a dynamic electricity tariff to unlock the full potential of your system."
+      }
+    ]
+  },
+  "faq": {
+    "tag": "FREQUENT QUESTIONS",
+    "heading": "What you should know",
+    "ctaText": "More questions? Contact us",
+    "items": [
+      {
+        "question": "How much electricity can a balcony solar system produce?",
+        "answer": "Output depends on several factors: location in Germany, balcony orientation, number of panels, and panel power. A typical 2-panel system (about 800W) can generate around 600-900 kWh per year in Germany, depending on orientation and shading."
+      },
+      {
+        "question": "Is a battery really necessary?",
+        "answer": "A battery is not mandatory but highly recommended. Without storage, you can only use electricity at the moment it is produced - usually around midday when demand is low. With a battery, self-consumption rises significantly and payback accelerates."
+      },
+      {
+        "question": "Do I need to register the system?",
+        "answer": "Yes, registration is required - but simplified. You must register your plug-in solar device in the market data register (MaStR). Prior approval by the grid operator is not required (status: Solarpaket I reform)."
+      },
+      {
+        "question": "Can tenants install a balcony solar system?",
+        "answer": "Yes. The system is compact, installation is non-invasive, and connection is via a standard socket. In rental apartments, inform your landlord, but approval is generally not required for plug-in operation."
+      },
+      {
+        "question": "How long is the payback period?",
+        "answer": "Payback depends on your consumption, electricity prices, and system setup. Typically, a balcony solar system with battery pays back within 4-7 years. Without battery, it can take longer."
+      },
+      {
+        "question": "What happens when moving home?",
+        "answer": "The system remains your property and is portable. It can be dismantled and reinstalled at your new place - whether balcony, garden, or wall."
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "tag": "DAYTIME",
+        "heading": "Solar generation and storage",
+        "paragraphs": [
+          "Solar panels generate electricity from sunlight. This energy is first used directly in the household.",
+          "Excess electricity is automatically stored in the battery system - for later."
+        ],
+        "quote": "",
+        "attribution": ""
+      },
+      {
+        "tag": "EVENING, MORNING, NIGHT",
+        "heading": "Use stored energy",
+        "paragraphs": [
+          "When solar generation is low or unavailable, stored battery energy powers the household.",
+          "This enables solar energy use around the clock - even when the sun is not shining."
+        ],
+        "quote": "",
+        "attribution": ""
+      }
+    ],
+    "scrollToSection": "Scroll to section {{index}}"
+  },
+  "contact": {
+    "heading": "Free balcony analysis",
+    "description": "Let us analyze your situation and recommend the optimal system setup for your household.",
+    "locationLabel": "Location",
+    "location": "Across Germany",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Phone",
+    "form": {
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your@email.com",
+      "messagePlaceholder": "Describe your situation (balcony orientation, electricity usage, etc.)"
+    },
+    "submitText": "Request analysis",
+    "submittingText": "Sending...",
+    "submittedText": "Sent",
+    "successMessage": "Thank you. We will contact you within 24 hours.",
+    "privacyConsentText": "I have read the privacy policy and agree to the processing of my data for handling my request."
+  },
+  "footer": {
+    "brandDescription": "Rationally reduce electricity costs with intelligent balcony solar systems. We analyze your situation and recommend the optimal setup.",
+    "newsletterHeading": "Newsletter",
+    "newsletterDescription": "Get tips on saving energy and the latest developments.",
+    "newsletterPlaceholder": "Your e-mail address",
+    "newsletterButtonText": "Subscribe",
+    "newsletterSuccessText": "Thank you for subscribing.",
+    "newsletterConsentText": "I want to receive the newsletter and accept the privacy policy.",
+    "groups": {
+      "product": "Product",
+      "resources": "Resources",
+      "company": "Company"
+    },
+    "links": {
+      "why": "Why rational",
+      "how": "How it works",
+      "installation": "Installation",
+      "calculator": "Calculator",
+      "faq": "FAQ",
+      "tariffs": "Dynamic tariffs",
+      "registry": "Market data register",
+      "about": "About us",
+      "contact": "Contact",
+      "career": "Careers",
+      "impressum": "Legal notice",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "copyrightText": "© 2026 SolarSmart. All rights reserved."
+  },
+  "legal": {
+    "impressumTitle": "Legal notice",
+    "impressumSubtitle": "Information according to Section 5 DDG",
+    "fields": {
+      "company": "Company:",
+      "legalForm": "Legal form:",
+      "representedBy": "Represented by:",
+      "address": "Address:",
+      "contact": "Contact:",
+      "registerEntry": "Register entry:",
+      "vatId": "VAT ID:",
+      "contentResponsible": "Responsible for content:"
+    },
+    "privacyTitle": "Privacy policy",
+    "privacy": {
+      "p1": "We process personal data only within the framework of applicable legal provisions (in particular GDPR and BDSG).",
+      "p2": "If you contact us via the contact form or newsletter, we process your data solely to handle your request or to send the newsletter.",
+      "p3": "Legal bases are Art. 6 para. 1 lit. a GDPR (consent) and Art. 6 para. 1 lit. b GDPR (pre-contractual measures).",
+      "p4": "You have the right to access, rectification, erasure, restriction of processing, and objection to processing of your data.",
+      "p5prefix": "For privacy inquiries, contact us at",
+      "note": "Note: This template does not replace individual legal advice. Please have final texts reviewed by legal counsel."
+    }
+  },
+  "legalConfig": {
+    "companyName": "[Please enter company name]",
+    "legalForm": "[Please enter legal form]",
+    "representedBy": "[Please enter authorized representative]",
+    "address": "[Please enter full service address]",
+    "phone": "[Please enter phone number]",
+    "email": "[Please enter legal notice e-mail]",
+    "registerEntry": "[Please enter registry court and number]",
+    "vatId": "[Please enter VAT ID, if available]",
+    "contentResponsiblePerson": "[Please enter content responsible person according to DDG]",
+    "privacyEmail": "[Please enter privacy contact]"
+  }
+}

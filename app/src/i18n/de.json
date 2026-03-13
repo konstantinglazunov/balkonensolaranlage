@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "title": "SolarSmart - Intelligente Balkonkraftwerk-Lösungen",
+    "description": "Rationell Stromkosten senken mit intelligenten Balkonkraftwerk-Systemen. Wir analysieren Ihre Situation und empfehlen die optimale Systemkonfiguration."
+  },
+  "language": {
+    "de": "DE",
+    "en": "EN",
+    "ru": "RU"
+  },
+  "hero_title": "Stromkosten rational\nsenken mit\nintelligenten\nBalkonkraftwerken",
+  "hero_subtitle": "RATIONELLE ENERGIEUNABHÄNGIGKEIT",
+  "cta_button": "Kostenlose Balkonanalyse",
+  "pricing_title": "Berechnen Sie Ihr Sparpotential",
+  "contact_title": "Kostenlose Balkonanalyse",
+  "common": {
+    "backToHome": "Zur Startseite",
+    "privacyPolicy": "Datenschutzerklärung",
+    "subtotal": "Zwischensumme"
+  },
+  "navigation": {
+    "brandName": "SolarSmart",
+    "searchPlaceholder": "Suchen...",
+    "cartEmptyText": "Ihr Analyse-Warenkorb ist leer",
+    "cartCheckoutText": "Kostenlose Analyse anfordern",
+    "continueShoppingText": "Weiter erkunden",
+    "menuLinks": {
+      "why": "Warum rational",
+      "how": "So funktioniert's",
+      "installation": "Installation",
+      "calculator": "Rechner",
+      "faq": "FAQ",
+      "contact": "Kontakt"
+    }
+  },
+  "hero": {
+    "ctaSecondary": "Sparpotential berechnen"
+  },
+  "subHero": {
+    "tag": "DIE RATIONALE LÖSUNG",
+    "heading": "Warum ein Balkonkraftwerk mit Batteriespeicher sinnvoll ist",
+    "paragraphs": [
+      "Balkonkraftwerke sind eine der rationalsten Möglichkeiten, Stromkosten zu senken. Doch ohne Batteriespeicher bleibt das Potential ungenutzt.",
+      "Solarstrom ist nur verfügbar, wenn die Sonne scheint. Der Haushaltsstrombedarf ist jedoch morgens und abends am höchsten - genau dann, wenn die Solarproduktion gering ist.",
+      "Mit einem Batteriespeicher wird der tagsüber erzeugte Solarstrom gespeichert und kann später genutzt werden. Das bedeutet: höherer Eigenverbrauch, weniger Stromkäufe aus dem Netz, schnellere Amortisation."
+    ],
+    "linkText": "Mehr erfahren",
+    "stats": {
+      "saving": "Stromkosteneinsparung",
+      "feedIn": "Max. Einspeiseleistung",
+      "payback": "Durchschnittliche Amortisation"
+    },
+    "years": "Jahre"
+  },
+  "energyFlow": {
+    "tag": "ENERGIEFLUSS",
+    "heading": "So funktioniert das System",
+    "description": "Verstehen Sie, wie Solarstrom erzeugt, gespeichert und intelligent genutzt wird.",
+    "scenarios": {
+      "day": {
+        "title": "Tagsüber",
+        "description": "Solarstrom wird erzeugt, direkt verbraucht und überschüssige Energie im Akku gespeichert.",
+        "imageAlt": "Tagsüber lädt die Solaranlage den Akku und versorgt den Haushalt"
+      },
+      "night": {
+        "title": "Abends & Nachts",
+        "description": "Der Akku versorgt den Haushalt, wenn keine Solarerzeugung möglich ist.",
+        "imageAlt": "Abends und nachts versorgt der Akku den Haushalt"
+      }
+    },
+    "cards": {
+      "monitoringTitle": "Echtzeit-Monitoring",
+      "monitoringDescription": "Behalten Sie Ihre Energieproduktion im Blick",
+      "batteryTitle": "Akku-Steuerung",
+      "batteryDescription": "Intelligente Ladung und Entladung",
+      "reportsTitle": "Energieberichte",
+      "reportsDescription": "Detaillierte Auswertungen und Einsparungen"
+    }
+  },
+  "videoSection": {
+    "tag": "EFFIZIENZ DAS GANZE JAHR",
+    "heading": "Das System funktioniert das ganze Jahr.",
+    "paragraphs": [
+      "Auch im Winter erzeugen moderne Solarpanels weiterhin Strom. Mit Batteriespeicher wird diese Energie maximal effizient genutzt.",
+      "Wenn die Solargenerierung im Winter niedriger ist, kann der Akku zusätzlich mit einem dynamischen Tarif zusammenarbeiten. Er lädt sich nachts automatisch, wenn der Strompreis niedrig ist, und wird tagsüber genutzt, wenn die Tarife höher sind.",
+      "Ein intelligentes Energiemanagement wählt den wirtschaftlichsten Betriebsmodus und kombiniert Solargenerierung, Akku und Stromtarife optimal."
+    ],
+    "cta": "Mehr zur Effizienz"
+  },
+  "products": {
+    "tag": "FLEXIBLE MONTAGE",
+    "heading": "Überall installierbar",
+    "description": "Solarpanelen können an verschiedenen Standorten montiert werden - perfekt angepasst auf Ihre räumlichen Gegebenheiten.",
+    "viewAllText": "Alle Optionen",
+    "addToCartText": "Mehr erfahren",
+    "addedToCartText": "Zur Analyse hinzugefügt",
+    "categories": {
+      "all": "Alle",
+      "balcony": "Balkon",
+      "wall": "Wand",
+      "roof": "Dach"
+    },
+    "items": {
+      "balconyMount": "Balkongeländer-Montage",
+      "wallMount": "Hauswand-Montage",
+      "roofMount": "Garagendach-Montage"
+    }
+  },
+  "features": {
+    "items": [
+      {
+        "title": "Keine Genehmigung nötig",
+        "description": "Stecker-Solargeräte unterliegen vereinfachten Regelungen. Nur Eintragung im Marktstammdatenregister erforderlich - keine vorherige Zustimmung des Netzbetreibers."
+      },
+      {
+        "title": "Auch in Mietwohnungen",
+        "description": "Das System ist kompakt, die Installation nicht-invasiv, der Anschluss erfolgt über eine normale Steckdose. Ideal für Mieter."
+      },
+      {
+        "title": "Mitnehmbar beim Umzug",
+        "description": "Das System bleibt Ihr Eigentum. Es kann einfach demontiert und am neuen Wohnort wieder installiert werden."
+      },
+      {
+        "title": "24/7 Überwachung",
+        "description": "Volle Kontrolle über Ihre Energieproduktion und -speicherung via App. Echtzeit-Monitoring und intelligente Steuerung."
+      }
+    ]
+  },
+  "calculator": {
+    "tag": "SOLAR-RECHNER",
+    "heading": "Berechnen Sie Ihr Sparpotential",
+    "description": "Schätzen Sie, wie schnell sich ein Balkonkraftwerk amortisiert - basierend auf Ihrer individuellen Situation.",
+    "yourData": "Ihre Daten",
+    "locationLabel": "Standort in Deutschland",
+    "orientationLabel": "Balkonausrichtung",
+    "panelCountLabel": "Anzahl Solarpanelen",
+    "panelMin": "1 Panel",
+    "panelMax": "4 Panel",
+    "batteryCapacityLabel": "Akkukapazität (kWh)",
+    "batteryMin": "Kein Akku",
+    "batteryMax": "5 kWh",
+    "monthlyConsumptionLabel": "Monatlicher Stromverbrauch (kWh)",
+    "electricityPriceLabel": "Aktueller Strompreis (€/kWh)",
+    "dynamicTariffTitle": "Dynamischer Stromtarif",
+    "dynamicTariffSubtitle": "Wir helfen beim Wechsel",
+    "metrics": {
+      "annualProduction": "Jährliche Erzeugung",
+      "annualSavings": "Jährliche Ersparnis",
+      "selfConsumption": "Eigenverbrauch",
+      "payback": "Amortisation",
+      "years": "Jahre"
+    },
+    "chartTitle": "Kumulierte Ersparnis über 20 Jahre",
+    "chartLegend": {
+      "savings": "Ersparnis",
+      "systemCost": "Systemkosten"
+    },
+    "cta": "Kostenlose Analyse anfordern",
+    "locations": {
+      "berlin": "Berlin",
+      "munich": "München",
+      "hamburg": "Hamburg",
+      "cologne": "Köln",
+      "frankfurt": "Frankfurt",
+      "stuttgart": "Stuttgart"
+    },
+    "orientations": {
+      "south": "Süd",
+      "southeast": "Südost",
+      "southwest": "Südwest",
+      "east": "Ost",
+      "west": "West"
+    }
+  },
+  "blog": {
+    "tag": "DYNAMISCHE STROMTARIFE",
+    "heading": "Intelligent Strom handeln",
+    "viewAllText": "Alle Artikel",
+    "readMoreText": "Mehr erfahren",
+    "posts": [
+      {
+        "title": "Dynamischer Tarif + intelligenter Akku",
+        "date": "2026",
+        "excerpt": "Das System analysiert kontinuierlich aktuelle Strompreise, Solarproduktionsprognosen und Haushaltsverbrauch. Bei niedrigen Preisen wird der Akku geladen, bei steigenden Preisen nutzt der Haushalt gespeicherte Energie."
+      },
+      {
+        "title": "Wir helfen beim Tarifwechsel",
+        "date": "2026",
+        "excerpt": "Noch keinen dynamischen Tarif? Wir unterstützen Sie bei der Umstellung auf einen dynamischen Stromtarif, um das volle Potential Ihres Systems auszuschöpfen."
+      }
+    ]
+  },
+  "faq": {
+    "tag": "HÄUFIGE FRAGEN",
+    "heading": "Was Sie wissen sollten",
+    "ctaText": "Weitere Fragen? Kontaktieren Sie uns",
+    "items": [
+      {
+        "question": "Wie viel Strom kann ein Balkonkraftwerk erzeugen?",
+        "answer": "Die Stromerzeugung hängt von mehreren Faktoren ab: Standort in Deutschland, Ausrichtung des Balkons, Anzahl der Solarpanelen und deren Leistung. Ein typisches System mit 2 Panelen (ca. 800W) kann in Deutschland jährlich zwischen 600-900 kWh erzeugen - je nach Ausrichtung und Verschattung."
+      },
+      {
+        "question": "Ist ein Akku wirklich notwendig?",
+        "answer": "Ein Akku ist nicht zwingend erforderlich, aber stark empfohlen. Ohne Speicher können Sie nur den Strom nutzen, der direkt erzeugt wird - meist zur Mittagszeit, wenn der Verbrauch gering ist. Mit Akku steigt der Eigenverbrauch deutlich, was die Amortisation beschleunigt."
+      },
+      {
+        "question": "Muss ich das System anmelden?",
+        "answer": "Ja, eine Anmeldung ist erforderlich - aber vereinfacht. Sie müssen Ihr Stecker-Solargerät im Marktstammdatenregister (MaStR) registrieren. Eine vorherige Genehmigung des Netzbetreibers ist nicht nötig (Stand: Solarpaket I Reform)."
+      },
+      {
+        "question": "Können Mieter ein Balkonkraftwerk installieren?",
+        "answer": "Ja! Das System ist kompakt, die Installation nicht-invasiv und der Anschluss erfolgt über eine normale Steckdose. Bei Mietwohnungen sollten Sie den Vermieter informieren, aber eine Zustimmung ist bei steckbarem Betrieb in der Regel nicht erforderlich."
+      },
+      {
+        "question": "Wie lange dauert die Amortisation?",
+        "answer": "Die Amortisationszeit hängt von Ihrem Stromverbrauch, den Strompreisen und der Systemkonfiguration ab. Typischerweise amortisiert sich ein Balkonkraftwerk mit Akku innerhalb von 4-7 Jahren. Ohne Akku kann es länger dauern."
+      },
+      {
+        "question": "Was passiert beim Umzug?",
+        "answer": "Das System bleibt Ihr Eigentum und ist mitnehmbar. Es kann einfach demontiert und am neuen Wohnort wieder installiert werden - egal ob Balkon, Garten oder Wand."
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "tag": "TAGSÜBER",
+        "heading": "Solarerzeugung und Speicherung",
+        "paragraphs": [
+          "Solarpanelen erzeugen Strom aus Sonnenlicht. Dieser Strom wird zunächst direkt im Haushalt genutzt.",
+          "Überschüssiger Strom wird automatisch im Batteriesystem gespeichert - für später."
+        ],
+        "quote": "",
+        "attribution": ""
+      },
+      {
+        "tag": "ABENDS, MORGENS, NACHTS",
+        "heading": "Gespeicherte Energie nutzen",
+        "paragraphs": [
+          "Wenn die Solarerzeugung niedrig oder nicht verfügbar ist, versorgt die gespeicherte Energie aus dem Akku den Haushalt.",
+          "So kann Solarstrom rund um die Uhr genutzt werden - auch wenn die Sonne nicht scheint."
+        ],
+        "quote": "",
+        "attribution": ""
+      }
+    ],
+    "scrollToSection": "Zu Abschnitt {{index}} scrollen"
+  },
+  "contact": {
+    "heading": "Kostenlose Balkonanalyse",
+    "description": "Lassen Sie uns Ihre Situation analysieren und die optimale Systemkonfiguration für Ihren Haushalt empfehlen.",
+    "locationLabel": "Standort",
+    "location": "Deutschlandweit",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Telefon",
+    "form": {
+      "namePlaceholder": "Ihr Name",
+      "emailPlaceholder": "ihre@email.de",
+      "messagePlaceholder": "Beschreiben Sie Ihre Situation (Balkonausrichtung, Stromverbrauch, etc.)"
+    },
+    "submitText": "Analyse anfordern",
+    "submittingText": "Wird gesendet...",
+    "submittedText": "Gesendet",
+    "successMessage": "Vielen Dank! Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.",
+    "privacyConsentText": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu."
+  },
+  "footer": {
+    "brandDescription": "Rationell Stromkosten senken mit intelligenten Balkonkraftwerk-Systemen. Wir analysieren Ihre Situation und empfehlen die optimale Konfiguration.",
+    "newsletterHeading": "Newsletter",
+    "newsletterDescription": "Erhalten Sie Tipps zu Energieeinsparung und neuen Entwicklungen.",
+    "newsletterPlaceholder": "Ihre E-Mail-Adresse",
+    "newsletterButtonText": "Anmelden",
+    "newsletterSuccessText": "Vielen Dank für Ihre Anmeldung!",
+    "newsletterConsentText": "Ich möchte den Newsletter erhalten und akzeptiere die Datenschutzerklärung.",
+    "groups": {
+      "product": "Produkt",
+      "resources": "Ressourcen",
+      "company": "Unternehmen"
+    },
+    "links": {
+      "why": "Warum rational",
+      "how": "So funktioniert's",
+      "installation": "Installation",
+      "calculator": "Rechner",
+      "faq": "FAQ",
+      "tariffs": "Dynamische Tarife",
+      "registry": "Marktstammdatenregister",
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "career": "Karriere",
+      "impressum": "Impressum",
+      "privacy": "Datenschutz",
+      "terms": "AGB"
+    },
+    "copyrightText": "© 2026 SolarSmart. Alle Rechte vorbehalten."
+  },
+  "legal": {
+    "impressumTitle": "Impressum",
+    "impressumSubtitle": "Angaben gemäß Paragraph 5 DDG",
+    "fields": {
+      "company": "Unternehmen:",
+      "legalForm": "Rechtsform:",
+      "representedBy": "Vertreten durch:",
+      "address": "Adresse:",
+      "contact": "Kontakt:",
+      "registerEntry": "Registereintrag:",
+      "vatId": "Umsatzsteuer-ID:",
+      "contentResponsible": "Verantwortlich für Inhalte:"
+    },
+    "privacyTitle": "Datenschutzerklärung",
+    "privacy": {
+      "p1": "Wir verarbeiten personenbezogene Daten nur im Rahmen der geltenden gesetzlichen Bestimmungen (insbesondere DSGVO und BDSG).",
+      "p2": "Wenn Sie uns über das Kontaktformular oder den Newsletter kontaktieren, verarbeiten wir Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage bzw. für den Versand des Newsletters.",
+      "p3": "Rechtsgrundlagen sind Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen).",
+      "p4": "Sie haben insbesondere das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Widerspruch gegen die Verarbeitung Ihrer Daten.",
+      "p5prefix": "Bei Datenschutzfragen kontaktieren Sie uns unter",
+      "note": "Hinweis: Dieses Muster ersetzt keine individuelle Rechtsberatung. Bitte lassen Sie die finalen Texte durch eine Rechtsberatung prüfen."
+    }
+  },
+  "legalConfig": {
+    "companyName": "[Bitte Unternehmensnamen eintragen]",
+    "legalForm": "[Bitte Rechtsform eintragen]",
+    "representedBy": "[Bitte vertretungsberechtigte Person eintragen]",
+    "address": "[Bitte vollständige ladungsfähige Anschrift eintragen]",
+    "phone": "[Bitte Telefonnummer eintragen]",
+    "email": "[Bitte Impressum-E-Mail eintragen]",
+    "registerEntry": "[Bitte Registergericht und Registernummer eintragen]",
+    "vatId": "[Bitte USt-IdNr. eintragen, falls vorhanden]",
+    "contentResponsiblePerson": "[Bitte inhaltlich verantwortliche Person gemäß DDG eintragen]",
+    "privacyEmail": "[Bitte Datenschutz-Kontakt eintragen]"
+  }
+}
