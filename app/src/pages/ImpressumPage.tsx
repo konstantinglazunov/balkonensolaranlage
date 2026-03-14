@@ -2,6 +2,7 @@ import Footer from '../sections/Footer';
 import { ImpressumContent } from '../sections/Legal';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 const ImpressumPage = () => {
   const { t } = useTranslation();
@@ -20,6 +21,7 @@ const ImpressumPage = () => {
         </section>
       </main>
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };

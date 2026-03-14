@@ -16,6 +16,7 @@
   "common": {
     "backToHome": "Zur Startseite",
     "privacyPolicy": "Datenschutzerklärung",
+    "backToTop": "Nach oben",
     "subtotal": "Zwischensumme"
   },
   "navigation": {
@@ -270,6 +271,7 @@
     "newsletterDescription": "Erhalten Sie Tipps zu Energieeinsparung und neuen Entwicklungen.",
     "newsletterPlaceholder": "Ihre E-Mail-Adresse",
     "newsletterButtonText": "Anmelden",
+    "newsletterSubmittingText": "Wird gesendet...",
     "newsletterSuccessText": "Vielen Dank für Ihre Anmeldung!",
     "newsletterConsentText": "Ich möchte den Newsletter erhalten und akzeptiere die Datenschutzerklärung.",
     "groups": {
@@ -318,15 +320,15 @@
     }
   },
   "legalConfig": {
-    "companyName": "[Bitte Unternehmensnamen eintragen]",
+    "companyName": "Konstantin Glazunov",
     "legalForm": "[Bitte Rechtsform eintragen]",
     "representedBy": "[Bitte vertretungsberechtigte Person eintragen]",
-    "address": "[Bitte vollständige ladungsfähige Anschrift eintragen]",
-    "phone": "[Bitte Telefonnummer eintragen]",
-    "email": "[Bitte Impressum-E-Mail eintragen]",
+    "address": "35619 Braunfels, Lindenstrasse 16",
+    "phone": "+49 1511 097 4353",
+    "email": "glazunov.const@gmail.com",
     "registerEntry": "[Bitte Registergericht und Registernummer eintragen]",
     "vatId": "[Bitte USt-IdNr. eintragen, falls vorhanden]",
     "contentResponsiblePerson": "[Bitte inhaltlich verantwortliche Person gemäß DDG eintragen]",
-    "privacyEmail": "[Bitte Datenschutz-Kontakt eintragen]"
+    "privacyEmail": "glazunov.const@gmail.com"
   }
 }

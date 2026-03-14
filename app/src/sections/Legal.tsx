@@ -1,9 +1,24 @@
 import { useTranslation } from 'react-i18next';
 import { getLegalConfig } from '../config';
 
+const obfuscateEmail = (email: string): string => {
+  const [localPart, domainPart] = email.split('@');
+  if (!localPart || !domainPart) {
+    return email;
+  }
+
+  const [domainName, ...tldParts] = domainPart.split('.');
+  if (!domainName || tldParts.length === 0) {
+    return `${localPart} [at] ${domainPart}`;
+  }
+
+  return `${localPart} [at] ${domainName} [dot] ${tldParts.join(' [dot] ')}`;
+};
+
 export const ImpressumContent = () => {
   const { t } = useTranslation();
   const legalConfig = getLegalConfig(t);
+  const obfuscatedEmail = obfuscateEmail(legalConfig.email);
 
   return (
     <article id="impressum" className="scroll-mt-24">
@@ -12,18 +27,11 @@ export const ImpressumContent = () => {
 
       <div className="space-y-3 text-[#333] leading-relaxed">
         <p><strong>{t('legal.fields.company')}</strong> {legalConfig.companyName}</p>
-        <p><strong>{t('legal.fields.legalForm')}</strong> {legalConfig.legalForm}</p>
-        <p><strong>{t('legal.fields.representedBy')}</strong> {legalConfig.representedBy}</p>
         <p><strong>{t('legal.fields.address')}</strong> {legalConfig.address}</p>
         <p>
           <strong>{t('legal.fields.contact')}</strong> {t('contact.phoneLabel')} {legalConfig.phone}, {t('contact.emailLabel')}{' '}
-          <a className="underline hover:text-black" href={`mailto:${legalConfig.email}`}>
-            {legalConfig.email}
-          </a>
+          <span className="select-all">{obfuscatedEmail}</span>
         </p>
-        <p><strong>{t('legal.fields.registerEntry')}</strong> {legalConfig.registerEntry}</p>
-        <p><strong>{t('legal.fields.vatId')}</strong> {legalConfig.vatId}</p>
-        <p><strong>{t('legal.fields.contentResponsible')}</strong> {legalConfig.contentResponsiblePerson}</p>
       </div>
     </article>
   );
@@ -32,6 +40,7 @@ export const ImpressumContent = () => {
 export const DatenschutzContent = () => {
   const { t } = useTranslation();
   const legalConfig = getLegalConfig(t);
+  const obfuscatedPrivacyEmail = obfuscateEmail(legalConfig.privacyEmail);
 
   return (
     <article id="datenschutz" className="scroll-mt-24">
@@ -44,9 +53,7 @@ export const DatenschutzContent = () => {
         <p>{t('legal.privacy.p4')}</p>
         <p>
           {t('legal.privacy.p5prefix')}{' '}
-          <a className="underline hover:text-black" href={`mailto:${legalConfig.privacyEmail}`}>
-            {legalConfig.privacyEmail}
-          </a>
+          <span className="select-all">{obfuscatedPrivacyEmail}</span>
           .
         </p>
         <p className="text-sm text-[#696969]">{t('legal.privacy.note')}</p>

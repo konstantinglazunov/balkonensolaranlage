@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import { MapPin, Mail, Phone, Send } from 'lucide-react';
+import { toast } from 'sonner';
 import { getContactConfig } from '../config';
 
 const Contact = () => {
@@ -66,6 +67,7 @@ const Contact = () => {
 
       setIsSubmitting(false);
       setIsSubmitted(true);
+      toast.success(contactConfig.successMessage);
       setFormData({ name: '', email: '', message: '' });
       setPrivacyAccepted(false);
       setTimeout(() => setIsSubmitted(false), 5000);

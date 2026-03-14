@@ -387,6 +387,7 @@ export interface FooterConfig {
   newsletterDescription: string;
   newsletterPlaceholder: string;
   newsletterButtonText: string;
+  newsletterSubmittingText: string;
   newsletterSuccessText: string;
   linkGroups: FooterLinkGroup[];
   legalLinks: FooterLink[];
@@ -402,6 +403,7 @@ export const getFooterConfig = (t: TFunction, lang: string): FooterConfig => ({
   newsletterDescription: t('footer.newsletterDescription'),
   newsletterPlaceholder: t('footer.newsletterPlaceholder'),
   newsletterButtonText: t('footer.newsletterButtonText'),
+  newsletterSubmittingText: t('footer.newsletterSubmittingText'),
   newsletterSuccessText: t('footer.newsletterSuccessText'),
   linkGroups: [
     {

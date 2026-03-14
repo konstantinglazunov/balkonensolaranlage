@@ -16,6 +16,7 @@
   "common": {
     "backToHome": "Back to homepage",
     "privacyPolicy": "Privacy policy",
+    "backToTop": "Back to top",
     "subtotal": "Subtotal"
   },
   "navigation": {
@@ -270,6 +271,7 @@
     "newsletterDescription": "Get tips on saving energy and the latest developments.",
     "newsletterPlaceholder": "Your e-mail address",
     "newsletterButtonText": "Subscribe",
+    "newsletterSubmittingText": "Sending...",
     "newsletterSuccessText": "Thank you for subscribing.",
     "newsletterConsentText": "I want to receive the newsletter and accept the privacy policy.",
     "groups": {
@@ -318,15 +320,15 @@
     }
   },
   "legalConfig": {
-    "companyName": "[Please enter company name]",
+    "companyName": "Konstantin Glazunov",
     "legalForm": "[Please enter legal form]",
     "representedBy": "[Please enter authorized representative]",
-    "address": "[Please enter full service address]",
-    "phone": "[Please enter phone number]",
-    "email": "[Please enter legal notice e-mail]",
+    "address": "35619 Braunfels, Lindenstrasse 16",
+    "phone": "+49 1511 097 4353",
+    "email": "glazunov.const@gmail.com",
     "registerEntry": "[Please enter registry court and number]",
     "vatId": "[Please enter VAT ID, if available]",
     "contentResponsiblePerson": "[Please enter content responsible person according to DDG]",
-    "privacyEmail": "[Please enter privacy contact]"
+    "privacyEmail": "glazunov.const@gmail.com"
   }
 }

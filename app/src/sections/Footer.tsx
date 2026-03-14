@@ -1,7 +1,8 @@
 import { Instagram, Facebook, Twitter, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { toast } from 'sonner';
 import { getFooterConfig } from '../config';
 
 const iconMap: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number; className?: string }>> = {
@@ -13,19 +14,53 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; strokeWidth?:
 const Footer = () => {
   const { t } = useTranslation();
   const { lang = 'de' } = useParams();
+  const location = useLocation();
+  const navigate = useNavigate();
   const footerConfig = getFooterConfig(t, lang);
 
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [newsletterConsent, setNewsletterConsent] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
     if (email && newsletterConsent) {
-      setIsSubscribed(true);
-      setEmail('');
-      setNewsletterConsent(false);
-      setTimeout(() => setIsSubscribed(false), 3000);
+      setIsSubmitting(true);
+      setSubmitError(false);
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/e394a2ac32c5dd4b142ad00b527f418c', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            email,
+            consent: true,
+            source: 'newsletter',
+            _subject: 'New newsletter subscription',
+            _captcha: 'false',
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to subscribe');
+        }
+
+        setIsSubmitting(false);
+        setIsSubscribed(true);
+        toast.success(footerConfig.newsletterSuccessText);
+        setEmail('');
+        setNewsletterConsent(false);
+        setTimeout(() => setIsSubscribed(false), 3000);
+      } catch {
+        setIsSubmitting(false);
+        setIsSubscribed(false);
+        setSubmitError(true);
+      }
     }
   };
 
@@ -36,6 +71,8 @@ const Footer = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const isHomePage = location.pathname === `/${lang}` || location.pathname === `/${lang}/`;
 
   return (
     <footer className="bg-white py-16 md:py-24">
@@ -73,13 +110,17 @@ const Footer = () => {
                 {group.links.map((link) => (
                   <li key={link.label}>
                     <a
-                      href={link.href}
                       onClick={(e) => {
                         if (link.href.startsWith('#')) {
                           e.preventDefault();
-                          scrollToSection(link.href);
+                          if (isHomePage) {
+                            scrollToSection(link.href);
+                          } else {
+                            navigate(`/${lang}/${link.href}`);
+                          }
                         }
                       }}
+                      href={link.href.startsWith('#') ? `/${lang}/${link.href}` : link.href}
                       target={link.href.startsWith('http') ? '_blank' : undefined}
                       rel={link.href.startsWith('http') ? 'nofollow noopener noreferrer' : undefined}
                       className="text-[#696969] text-base font-light link-hover inline-block"
@@ -127,10 +168,12 @@ const Footer = () => {
                 </label>
                 <button
                   type="submit"
-                  disabled={!newsletterConsent}
+                  disabled={!newsletterConsent || isSubmitting}
                   className="flex items-center justify-center gap-2 px-6 py-3 bg-[#8b6d4b] text-white text-sm font-light tracking-wider btn-hover disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isSubscribed ? (
+                  {isSubmitting ? (
+                    <span className="animate-pulse">{footerConfig.newsletterSubmittingText}</span>
+                  ) : isSubscribed ? (
                     <span>{footerConfig.newsletterSuccessText}</span>
                   ) : (
                     <>
@@ -139,6 +182,11 @@ const Footer = () => {
                     </>
                   )}
                 </button>
+                {submitError && (
+                  <p className="text-xs text-red-500">
+                    There was an error sending your subscription. Please try again.
+                  </p>
+                )}
               </form>
             </div>
           )}

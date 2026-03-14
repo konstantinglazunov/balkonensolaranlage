@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 import type { Product } from './config';
 import Navigation from './sections/Navigation';
 import Hero from './sections/Hero';
@@ -15,6 +16,7 @@ import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import Calculator from './sections/Calculator';
 import EnergyFlow from './sections/EnergyFlow';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 interface CartItem {
   id: number;
@@ -26,6 +28,7 @@ interface CartItem {
 
 function HomePage() {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   const handleAddToCart = useCallback((product: Product) => {
@@ -76,6 +79,19 @@ function HomePage() {
     document.documentElement.lang = i18n.language;
   }, [t, i18n.language]);
 
+  useEffect(() => {
+    if (!location.hash) return;
+
+    const timer = window.setTimeout(() => {
+      const target = document.querySelector(location.hash);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 0);
+
+    return () => window.clearTimeout(timer);
+  }, [location.hash]);
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation
@@ -97,6 +113,7 @@ function HomePage() {
         <Contact />
       </main>
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }
