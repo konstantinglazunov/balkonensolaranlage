@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+const withBaseAsset = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+
 const EnergyFlow = () => {
   const { t } = useTranslation();
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -28,13 +30,13 @@ const EnergyFlow = () => {
     {
       title: t('energyFlow.scenarios.day.title'),
       description: t('energyFlow.scenarios.day.description'),
-      image: '/images/solar_tag.jpg',
+      image: withBaseAsset('/images/solar_tag.jpg'),
       imageAlt: t('energyFlow.scenarios.day.imageAlt'),
     },
     {
       title: t('energyFlow.scenarios.night.title'),
       description: t('energyFlow.scenarios.night.description'),
-      image: '/images/akku_nachts.jpg',
+      image: withBaseAsset('/images/akku_nachts.jpg'),
       imageAlt: t('energyFlow.scenarios.night.imageAlt'),
     },
   ];
@@ -82,7 +84,7 @@ const EnergyFlow = () => {
         <div className={`mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="bg-white rounded-xl overflow-hidden shadow-lg">
             <img 
-              src="/images/photo_2026-03-06_14-25-32.jpg" 
+              src={withBaseAsset('/images/photo_2026-03-06_14-25-32.jpg')}
               alt={t('energyFlow.cards.monitoringTitle')} 
               className="w-full h-64 object-cover object-top"
             />
@@ -94,7 +96,7 @@ const EnergyFlow = () => {
           
           <div className="bg-white rounded-xl overflow-hidden shadow-lg">
             <img 
-              src="/images/photo_2026-03-06_15-36-24.jpg" 
+              src={withBaseAsset('/images/photo_2026-03-06_15-36-24.jpg')}
               alt={t('energyFlow.cards.batteryTitle')} 
               className="w-full h-64 object-cover object-top"
             />
@@ -106,7 +108,7 @@ const EnergyFlow = () => {
           
           <div className="bg-white rounded-xl overflow-hidden shadow-lg">
             <img 
-              src="/images/photo_2026-03-06_14-25-32 (2).jpg" 
+              src={withBaseAsset('/images/photo_2026-03-06_14-25-32 (2).jpg')}
               alt={t('energyFlow.cards.reportsTitle')} 
               className="w-full h-64 object-cover object-top"
             />

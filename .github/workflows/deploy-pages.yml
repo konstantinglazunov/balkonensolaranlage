@@ -37,6 +37,10 @@ jobs:
         run: npm run build
         working-directory: app
 
+      - name: Add SPA fallback
+        run: cp dist/index.html dist/404.html
+        working-directory: app
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

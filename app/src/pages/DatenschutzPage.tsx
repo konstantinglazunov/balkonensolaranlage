@@ -7,13 +7,14 @@ import ScrollToTopButton from '../components/ScrollToTopButton';
 const DatenschutzPage = () => {
   const { t } = useTranslation();
   const { lang = 'de' } = useParams();
+  const withBasePath = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
 
   return (
     <div className="min-h-screen bg-white">
       <main>
         <section className="bg-white py-20 md:py-24">
           <div className="max-w-[1100px] mx-auto px-6">
-            <a href={`/${lang}/`} className="inline-block mb-10 text-sm text-[#696969] underline hover:text-black">
+            <a href={withBasePath(`/${lang}/`)} className="inline-block mb-10 text-sm text-[#696969] underline hover:text-black">
               {t('common.backToHome')}
             </a>
             <DatenschutzContent />

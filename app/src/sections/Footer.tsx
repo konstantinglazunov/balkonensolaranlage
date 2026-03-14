@@ -16,6 +16,7 @@ const Footer = () => {
   const { lang = 'de' } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
+  const withBasePath = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
   const footerConfig = getFooterConfig(t, lang);
 
   const [email, setEmail] = useState('');
@@ -120,7 +121,7 @@ const Footer = () => {
                           }
                         }
                       }}
-                      href={link.href.startsWith('#') ? `/${lang}/${link.href}` : link.href}
+                      href={link.href.startsWith('http') ? link.href : withBasePath(link.href.startsWith('#') ? `/${lang}/${link.href}` : link.href)}
                       target={link.href.startsWith('http') ? '_blank' : undefined}
                       rel={link.href.startsWith('http') ? 'nofollow noopener noreferrer' : undefined}
                       className="text-[#696969] text-base font-light link-hover inline-block"
@@ -161,7 +162,7 @@ const Footer = () => {
                   />
                   <span>
                     {footerConfig.newsletterConsentText}{' '}
-                    <a href={`/${lang}/datenschutz`} className="underline hover:text-black">
+                    <a href={withBasePath(`/${lang}/datenschutz`)} className="underline hover:text-black">
                       {t('common.privacyPolicy')}
                     </a>
                   </span>
@@ -202,7 +203,7 @@ const Footer = () => {
               {footerConfig.legalLinks.map((link) => (
                 <a
                   key={link.label}
-                  href={link.href}
+                  href={withBasePath(link.href)}
                   className="text-[#696969] text-xs hover:text-black transition-colors"
                 >
                   {link.label}

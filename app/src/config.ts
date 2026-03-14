@@ -1,5 +1,7 @@
 import type { TFunction } from 'i18next';
 
+const withBaseAsset = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+
 // Shared types
 export interface SiteConfig {
   title: string;
@@ -54,7 +56,7 @@ export const getNavigationConfig = (t: TFunction): NavigationConfig => ({
   cartEmptyText: t('navigation.cartEmptyText'),
   cartCheckoutText: t('navigation.cartCheckoutText'),
   continueShoppingText: t('navigation.continueShoppingText'),
-  menuBackgroundImage: '/images/hero-balcony-solar.jpg',
+  menuBackgroundImage: withBaseAsset('/images/hero-balcony-solar.jpg'),
 });
 
 // ─── Hero ────────────────────────────────────────────────────────────────────
@@ -76,7 +78,7 @@ export const getHeroConfig = (t: TFunction): HeroConfig => ({
   ctaPrimaryTarget: '#contact',
   ctaSecondaryText: t('hero.ctaSecondary'),
   ctaSecondaryTarget: '#calculator',
-  backgroundImage: '/images/hero-balcony-solar.jpg',
+  backgroundImage: withBaseAsset('/images/hero-balcony-solar.jpg'),
 });
 
 // ─── SubHero ─────────────────────────────────────────────────────────────────
@@ -104,8 +106,8 @@ export const getSubHeroConfig = (t: TFunction): SubHeroConfig => ({
   bodyParagraphs: t('subHero.paragraphs', { returnObjects: true }) as string[],
   linkText: t('subHero.linkText'),
   linkTarget: '#how-it-works',
-  image1: '/images/battery-unit.jpg',
-  image2: '/images/installation-service.jpg',
+  image1: withBaseAsset('/images/battery-unit.jpg'),
+  image2: withBaseAsset('/images/installation-service.jpg'),
   stats: [
     { value: 60, suffix: '%', label: t('subHero.stats.saving') },
     { value: 800, suffix: 'W', label: t('subHero.stats.feedIn') },
@@ -130,7 +132,7 @@ export const getVideoSectionConfig = (t: TFunction): VideoSectionConfig => ({
   bodyParagraphs: t('videoSection.paragraphs', { returnObjects: true }) as string[],
   ctaText: t('videoSection.cta'),
   ctaTarget: '#how-it-works',
-  backgroundImage: '/images/energy-flow-diagram.jpg',
+  backgroundImage: withBaseAsset('/images/energy-flow-diagram.jpg'),
 });
 
 // ─── Products (Installation Options) ─────────────────────────────────────────
@@ -168,9 +170,9 @@ export const getProductsConfig = (t: TFunction): ProductsConfig => ({
     t('products.categories.roof'),
   ],
   products: [
-    { id: 1, name: t('products.items.balconyMount'), price: 0, category: t('products.categories.balcony'), image: '/images/hero-balcony-solar.jpg' },
-    { id: 2, name: t('products.items.wallMount'), price: 0, category: t('products.categories.wall'), image: '/images/wall-installation.jpg' },
-    { id: 3, name: t('products.items.roofMount'), price: 0, category: t('products.categories.roof'), image: '/images/garage-installation.jpg' },
+    { id: 1, name: t('products.items.balconyMount'), price: 0, category: t('products.categories.balcony'), image: withBaseAsset('/images/hero-balcony-solar.jpg') },
+    { id: 2, name: t('products.items.wallMount'), price: 0, category: t('products.categories.wall'), image: withBaseAsset('/images/wall-installation.jpg') },
+    { id: 3, name: t('products.items.roofMount'), price: 0, category: t('products.categories.roof'), image: withBaseAsset('/images/garage-installation.jpg') },
   ],
 });
 
@@ -219,7 +221,10 @@ export interface BlogConfig {
 
 export const getBlogConfig = (t: TFunction): BlogConfig => {
   const posts = t('blog.posts', { returnObjects: true }) as Array<{ title: string; date: string; excerpt: string }>;
-  const images = ['/images/savings-chart.jpg', '/images/app-monitoring.jpg'];
+  const images = [
+    withBaseAsset('/images/savings-chart.jpg'),
+    withBaseAsset('/images/app-monitoring.jpg'),
+  ];
 
   return {
     tag: t('blog.tag'),
@@ -294,8 +299,8 @@ export const getAboutConfig = (t: TFunction): AboutConfig => {
   }>;
 
   const visual = [
-    { image: '/images/photo_2026-03-06_14-25-32.jpg', backgroundColor: '#1a1a1a', textColor: '#ffffff' },
-    { image: '/images/photo_2026-03-06_14-25-32 (2).jpg', backgroundColor: '#f5f5f5', textColor: '#1a1a1a' },
+    { image: withBaseAsset('/images/photo_2026-03-06_14-25-32.jpg'), backgroundColor: '#1a1a1a', textColor: '#ffffff' },
+    { image: withBaseAsset('/images/photo_2026-03-06_14-25-32 (2).jpg'), backgroundColor: '#f5f5f5', textColor: '#1a1a1a' },
   ];
 
   return {
@@ -358,7 +363,7 @@ export const getContactConfig = (t: TFunction): ContactConfig => ({
   submittingText: t('contact.submittingText'),
   submittedText: t('contact.submittedText'),
   successMessage: t('contact.successMessage'),
-  backgroundImage: '/images/happy-customers.jpg',
+  backgroundImage: withBaseAsset('/images/happy-customers.jpg'),
   privacyConsentText: t('contact.privacyConsentText'),
 });
 

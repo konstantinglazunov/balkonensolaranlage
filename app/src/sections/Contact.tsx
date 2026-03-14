@@ -8,6 +8,7 @@ import { getContactConfig } from '../config';
 const Contact = () => {
   const { t } = useTranslation();
   const { lang = 'de' } = useParams();
+  const withBasePath = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
   const contactConfig = getContactConfig(t);
 
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -202,7 +203,7 @@ const Contact = () => {
                 />
                 <span>
                   {contactConfig.privacyConsentText}{' '}
-                  <a href={`/${lang}/datenschutz`} className="underline hover:text-white">
+                  <a href={withBasePath(`/${lang}/datenschutz`)} className="underline hover:text-white">
                     {t('common.privacyPolicy')}
                   </a>
                 </span>
