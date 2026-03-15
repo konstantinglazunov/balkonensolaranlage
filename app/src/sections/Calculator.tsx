@@ -69,7 +69,7 @@ const Calculator = () => {
     
     const baseIrradiance = locationFactors[location] || 950;
     const orientationFactor = orientationFactors[orientation] || 1.0;
-    const panelPower = 400; // Watts per panel
+    const panelPower = 520; // Watts per panel
     
     // Annual production calculation
     const annualProduction = Math.round(
@@ -91,9 +91,9 @@ const Calculator = () => {
     );
     
     // System cost estimation
-    const panelCost = panelCount * 350;
-    const batteryCost = batteryCapacity * 400;
-    const installationCost = 500;
+    const panelCost = panelCount * 150;
+    const batteryCost = (batteryCapacity / 2) * 600;
+    const installationCost = 300;
     const totalCost = panelCost + batteryCost + installationCost;
     
     // Payback period
@@ -222,8 +222,8 @@ const Calculator = () => {
                 <input
                   type="range"
                   min={0}
-                  max={5}
-                  step={0.5}
+                  max={6}
+                  step={2}
                   value={batteryCapacity}
                   onChange={(e) => setBatteryCapacity(parseFloat(e.target.value))}
                   className="w-full h-2 bg-[#333] rounded-lg appearance-none cursor-pointer accent-[#00d084]"
