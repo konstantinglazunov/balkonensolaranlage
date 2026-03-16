@@ -11,6 +11,13 @@ interface CalculationResult {
   co2Reduction: number;
 }
 
+interface SavingsChartPoint {
+  year: number;
+  savings: number;
+  cost: number;
+  net: number;
+}
+
 const Calculator = () => {
   const { t } = useTranslation();
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -27,7 +34,7 @@ const Calculator = () => {
   
   // Results
   const [results, setResults] = useState<CalculationResult | null>(null);
-  const [chartData, setChartData] = useState<any[]>([]);
+  const [chartData, setChartData] = useState<SavingsChartPoint[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -111,7 +118,7 @@ const Calculator = () => {
     });
     
     // Generate chart data (20 years projection)
-    const data = [];
+    const data: SavingsChartPoint[] = [];
     let cumulativeSavings = 0;
     const systemCost = totalCost;
     
@@ -275,6 +282,7 @@ const Calculator = () => {
                   <span className="text-[#666] text-sm">{t('calculator.dynamicTariffSubtitle')}</span>
                 </div>
                 <button
+                  type="button"
                   onClick={() => setHasDynamicTariff(!hasDynamicTariff)}
                   className={`w-14 h-7 rounded-full transition-colors relative ${hasDynamicTariff ? 'bg-[#4f8eff]' : 'bg-[#333]'}`}
                 >

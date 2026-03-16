@@ -1,14 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
-
-const SUPPORTED_LANGS = ['de', 'en', 'ru'];
+import { SUPPORTED_LANGS, isSupportedLang } from '../constants/i18n';
 
 const LanguageSwitcher = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
   const { lang } = useParams();
-  const currentLang = SUPPORTED_LANGS.includes(lang) ? lang : 'de';
+  const currentLang = isSupportedLang(lang) ? lang : 'de';
 
   const switchLanguage = (nextLang) => {
     if (nextLang === currentLang) return;

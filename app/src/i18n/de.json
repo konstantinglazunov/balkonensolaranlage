@@ -10,9 +10,9 @@
   },
   "hero_title": "Stromkosten rational\nsenken mit\nintelligenten\nBalkonkraftwerken",
   "hero_subtitle": "RATIONELLE ENERGIEUNABHÄNGIGKEIT",
-  "cta_button": "Kostenlose Balkonanalyse",
+  "cta_button": "Kostenlose Vor-Ort-Beratung",
   "pricing_title": "Berechnen Sie Ihr Sparpotential",
-  "contact_title": "Kostenlose Balkonanalyse",
+  "contact_title": "Kostenlose Vor-Ort-Beratung",
   "common": {
     "backToHome": "Zur Startseite",
     "privacyPolicy": "Datenschutzerklärung",
@@ -248,12 +248,13 @@
     "scrollToSection": "Zu Abschnitt {{index}} scrollen"
   },
   "contact": {
-    "heading": "Kostenlose Balkonanalyse",
-    "description": "Lassen Sie uns Ihre Situation analysieren und die optimale Systemkonfiguration für Ihren Haushalt empfehlen.",
+    "heading": "Kostenlose Vor-Ort-Beratung",
+    "description": "Ein Fachberater kommt zu Ihnen, prüft die Installationsbedingungen für ein Balkonkraftwerk und schlägt die optimale Systemkonfiguration vor.",
     "locationLabel": "Standort",
     "location": "Deutschlandweit",
     "emailLabel": "E-Mail",
     "phoneLabel": "Telefon",
+    "whatsappLabel": "WhatsApp",
     "form": {
       "namePlaceholder": "Ihr Name",
       "emailPlaceholder": "ihre@email.de",
@@ -262,6 +263,7 @@
     "submitText": "Analyse anfordern",
     "submittingText": "Wird gesendet...",
     "submittedText": "Gesendet",
+    "submitErrorMessage": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
     "successMessage": "Vielen Dank! Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.",
     "privacyConsentText": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu."
   },
@@ -273,6 +275,7 @@
     "newsletterButtonText": "Anmelden",
     "newsletterSubmittingText": "Wird gesendet...",
     "newsletterSuccessText": "Vielen Dank für Ihre Anmeldung!",
+    "newsletterErrorText": "Beim Senden Ihrer Anmeldung ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
     "newsletterConsentText": "Ich möchte den Newsletter erhalten und akzeptiere die Datenschutzerklärung.",
     "groups": {
       "product": "Produkt",
@@ -311,12 +314,66 @@
     },
     "privacyTitle": "Datenschutzerklärung",
     "privacy": {
-      "p1": "Wir verarbeiten personenbezogene Daten nur im Rahmen der geltenden gesetzlichen Bestimmungen (insbesondere DSGVO und BDSG).",
-      "p2": "Wenn Sie uns über das Kontaktformular oder den Newsletter kontaktieren, verarbeiten wir Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage bzw. für den Versand des Newsletters.",
-      "p3": "Rechtsgrundlagen sind Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen).",
-      "p4": "Sie haben insbesondere das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Widerspruch gegen die Verarbeitung Ihrer Daten.",
-      "p5prefix": "Bei Datenschutzfragen kontaktieren Sie uns unter",
-      "note": "Hinweis: Dieses Muster ersetzt keine individuelle Rechtsberatung. Bitte lassen Sie die finalen Texte durch eine Rechtsberatung prüfen."
+      "intro": "Wir verarbeiten personenbezogene Daten ausschließlich im Rahmen der gesetzlichen Vorschriften, insbesondere der Datenschutz-Grundverordnung (DSGVO), des Bundesdatenschutzgesetzes (BDSG) und des TTDSG.",
+      "controller": {
+        "title": "1. Verantwortlicher"
+      },
+      "sections": [
+        {
+          "title": "2. Hosting und Server-Logfiles",
+          "paragraphs": [
+            "Diese Website wird derzeit über GitHub Pages bereitgestellt. Hosting-Anbieter ist GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.",
+            "Beim Aufruf der Website werden technisch erforderliche Verbindungsdaten (z. B. IP-Adresse, Datum/Uhrzeit, aufgerufene URL, Referrer, Browser-Informationen) verarbeitet, um den sicheren und stabilen Betrieb der Website zu gewährleisten.",
+            "Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Betriebssicherheit und Stabilität). Datenschutzhinweise von GitHub: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+          ]
+        },
+        {
+          "title": "3. Kontaktformular",
+          "paragraphs": [
+            "Wenn Sie uns über das Kontaktformular kontaktieren, verarbeiten wir die von Ihnen eingegebenen Daten (Name, E-Mail-Adresse, Nachricht), um Ihre Anfrage zu bearbeiten.",
+            "Für den Formularversand nutzen wir den Dienst FormSubmit. Dabei werden die eingegebenen Daten an FormSubmit als technischen Auftragsverarbeiter übermittelt.",
+            "Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Kommunikation) sowie ergänzend Art. 6 Abs. 1 lit. f DSGVO (effiziente Bearbeitung von Anfragen)."
+          ]
+        },
+        {
+          "title": "4. Empfänger und Drittlandübermittlung",
+          "paragraphs": [
+            "Empfänger Ihrer Daten sind nur Stellen, die diese zur Erfüllung der jeweiligen Zwecke benötigen (z. B. Hosting- oder Formular-Dienstleister).",
+            "Eine Übermittlung in die USA kann insbesondere beim Hosting und bei der technischen Formularübermittlung nicht ausgeschlossen werden.",
+            "Sofern eine Drittlandübermittlung in die USA erfolgt, stützen wir diese auf geeignete Garantien nach Art. 44 ff. DSGVO, insbesondere auf EU-Standardvertragsklauseln (Standard Contractual Clauses, SCC)."
+          ]
+        },
+        {
+          "title": "5. Cookies und ähnliche Technologien",
+          "paragraphs": [
+            "Wir verwenden nach aktuellem Stand keine Analyse- oder Marketing-Cookies.",
+            "Technisch notwendige Zustandsinformationen der Benutzeroberfläche (z. B. temporäre Anzeigeeinstellungen) können im Browser gespeichert werden, soweit dies für den Betrieb der Website erforderlich ist."
+          ]
+        },
+        {
+          "title": "6. Aufbewahrungsdauer und Löschfristen",
+          "paragraphs": [
+            "Wir speichern personenbezogene Daten nur so lange, wie dies für die jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.",
+            "Kontaktanfragen speichern wir in der Regel für 6 bis 12 Monate nach Abschluss der Bearbeitung, sofern keine längere Aufbewahrung gesetzlich erforderlich ist."
+          ]
+        },
+        {
+          "title": "7. Ihre Rechte",
+          "paragraphs": [
+            "Sie haben nach Maßgabe der gesetzlichen Voraussetzungen das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) sowie Widerspruch gegen Verarbeitungen nach Art. 21 DSGVO.",
+            "Soweit die Verarbeitung auf Einwilligung beruht, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.",
+            "Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO)."
+          ]
+        },
+        {
+          "title": "8. Pflicht zur Bereitstellung von Daten",
+          "paragraphs": [
+            "Die Bereitstellung personenbezogener Daten ist grundsätzlich freiwillig. Ohne bestimmte Angaben (z. B. E-Mail-Adresse im Kontaktformular) können wir Ihre Anfrage jedoch nicht bearbeiten."
+          ]
+        }
+      ],
+      "lastUpdated": "Stand: 15.03.2026",
+      "note": ""
     }
   },
   "legalConfig": {

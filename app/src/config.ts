@@ -1,6 +1,5 @@
 import type { TFunction } from 'i18next';
-
-const withBaseAsset = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+import { toBasePath } from './lib/path';
 
 // Shared types
 export interface SiteConfig {
@@ -56,7 +55,7 @@ export const getNavigationConfig = (t: TFunction): NavigationConfig => ({
   cartEmptyText: t('navigation.cartEmptyText'),
   cartCheckoutText: t('navigation.cartCheckoutText'),
   continueShoppingText: t('navigation.continueShoppingText'),
-  menuBackgroundImage: withBaseAsset('/images/hero-balcony-solar.jpg'),
+  menuBackgroundImage: toBasePath('/images/hero-balcony-solar.jpg'),
 });
 
 // ─── Hero ────────────────────────────────────────────────────────────────────
@@ -78,7 +77,7 @@ export const getHeroConfig = (t: TFunction): HeroConfig => ({
   ctaPrimaryTarget: '#contact',
   ctaSecondaryText: t('hero.ctaSecondary'),
   ctaSecondaryTarget: '#calculator',
-  backgroundImage: withBaseAsset('/images/hero-balcony-solar.jpg'),
+  backgroundImage: toBasePath('/images/hero-balcony-solar.jpg'),
 });
 
 // ─── SubHero ─────────────────────────────────────────────────────────────────
@@ -106,8 +105,8 @@ export const getSubHeroConfig = (t: TFunction): SubHeroConfig => ({
   bodyParagraphs: t('subHero.paragraphs', { returnObjects: true }) as string[],
   linkText: t('subHero.linkText'),
   linkTarget: '#how-it-works',
-  image1: withBaseAsset('/images/battery-unit.jpg'),
-  image2: withBaseAsset('/images/installation-service.jpg'),
+  image1: toBasePath('/images/battery-unit.jpg'),
+  image2: toBasePath('/images/installation-service.jpg'),
   stats: [
     { value: 60, suffix: '%', label: t('subHero.stats.saving') },
     { value: 800, suffix: 'W', label: t('subHero.stats.feedIn') },
@@ -132,7 +131,7 @@ export const getVideoSectionConfig = (t: TFunction): VideoSectionConfig => ({
   bodyParagraphs: t('videoSection.paragraphs', { returnObjects: true }) as string[],
   ctaText: t('videoSection.cta'),
   ctaTarget: '#how-it-works',
-  backgroundImage: withBaseAsset('/images/energy-flow-diagram.jpg'),
+  backgroundImage: toBasePath('/images/energy-flow-diagram.jpg'),
 });
 
 // ─── Products (Installation Options) ─────────────────────────────────────────
@@ -170,9 +169,9 @@ export const getProductsConfig = (t: TFunction): ProductsConfig => ({
     t('products.categories.roof'),
   ],
   products: [
-    { id: 1, name: t('products.items.balconyMount'), price: 0, category: t('products.categories.balcony'), image: withBaseAsset('/images/hero-balcony-solar.jpg') },
-    { id: 2, name: t('products.items.wallMount'), price: 0, category: t('products.categories.wall'), image: withBaseAsset('/images/wall-installation.jpg') },
-    { id: 3, name: t('products.items.roofMount'), price: 0, category: t('products.categories.roof'), image: withBaseAsset('/images/garage-installation.jpg') },
+    { id: 1, name: t('products.items.balconyMount'), price: 0, category: t('products.categories.balcony'), image: toBasePath('/images/hero-balcony-solar.jpg') },
+    { id: 2, name: t('products.items.wallMount'), price: 0, category: t('products.categories.wall'), image: toBasePath('/images/wall-installation.jpg') },
+    { id: 3, name: t('products.items.roofMount'), price: 0, category: t('products.categories.roof'), image: toBasePath('/images/garage-installation.jpg') },
   ],
 });
 
@@ -222,8 +221,8 @@ export interface BlogConfig {
 export const getBlogConfig = (t: TFunction): BlogConfig => {
   const posts = t('blog.posts', { returnObjects: true }) as Array<{ title: string; date: string; excerpt: string }>;
   const images = [
-    withBaseAsset('/images/savings-chart.jpg'),
-    withBaseAsset('/images/app-monitoring.jpg'),
+    toBasePath('/images/savings-chart.jpg'),
+    toBasePath('/images/app-monitoring.jpg'),
   ];
 
   return {
@@ -299,8 +298,8 @@ export const getAboutConfig = (t: TFunction): AboutConfig => {
   }>;
 
   const visual = [
-    { image: withBaseAsset('/images/photo_2026-03-06_14-25-32.jpg'), backgroundColor: '#1a1a1a', textColor: '#ffffff' },
-    { image: withBaseAsset('/images/photo_2026-03-06_14-25-32 (2).jpg'), backgroundColor: '#f5f5f5', textColor: '#1a1a1a' },
+    { image: toBasePath('/images/photo_2026-03-06_14-25-32.jpg'), backgroundColor: '#1a1a1a', textColor: '#ffffff' },
+    { image: toBasePath('/images/photo_2026-03-06_14-25-32 (2).jpg'), backgroundColor: '#f5f5f5', textColor: '#1a1a1a' },
   ];
 
   return {
@@ -343,14 +342,17 @@ export interface ContactConfig {
 }
 
 export const getContactConfig = (t: TFunction): ContactConfig => ({
+  // Reuse legal contact details to keep homepage and legal pages consistent.
+  // This avoids mismatches between Kontakt section and Datenschutz/Impressum.
+  // Values are managed in i18n under legalConfig.
   heading: t('contact.heading'),
   description: t('contact.description'),
   locationLabel: t('contact.locationLabel'),
-  location: t('contact.location'),
+  location: t('legalConfig.address'),
   emailLabel: t('contact.emailLabel'),
-  email: 'info@solarsmart.de',
-  phoneLabel: t('contact.phoneLabel'),
-  phone: '+49 (0) 800 1234567',
+  email: t('legalConfig.email'),
+  phoneLabel: t('contact.whatsappLabel'),
+  phone: t('legalConfig.phone'),
   formFields: {
     nameLabel: '',
     namePlaceholder: t('contact.form.namePlaceholder'),
@@ -363,7 +365,7 @@ export const getContactConfig = (t: TFunction): ContactConfig => ({
   submittingText: t('contact.submittingText'),
   submittedText: t('contact.submittedText'),
   successMessage: t('contact.successMessage'),
-  backgroundImage: withBaseAsset('/images/happy-customers.jpg'),
+  backgroundImage: toBasePath('/images/happy-customers.jpg'),
   privacyConsentText: t('contact.privacyConsentText'),
 });
 

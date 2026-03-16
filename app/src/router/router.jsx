@@ -5,8 +5,7 @@ import App from '../App.tsx';
 import ImpressumPage from '../pages/ImpressumPage.tsx';
 import DatenschutzPage from '../pages/DatenschutzPage.tsx';
 import SeoHreflang from '../components/SeoHreflang';
-
-const SUPPORTED_LANGS = ['de', 'en', 'ru'];
+import { isSupportedLang } from '../constants/i18n';
 
 const detectBrowserLang = () => {
   const browserLang = (navigator.language || '').toLowerCase();
@@ -23,7 +22,7 @@ const RootRedirect = () => {
 const LocalizedRoutes = () => {
   const { lang } = useParams();
   const location = useLocation();
-  const currentLang = SUPPORTED_LANGS.includes(lang) ? lang : null;
+  const currentLang = isSupportedLang(lang) ? lang : null;
 
   useEffect(() => {
     if (currentLang && i18n.language !== currentLang) {

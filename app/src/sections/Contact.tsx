@@ -1,15 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
-import { MapPin, Mail, Phone, Send } from 'lucide-react';
+import { MapPin, Mail, MessageCircle, Send } from 'lucide-react';
 import { toast } from 'sonner';
 import { getContactConfig } from '../config';
+import { toBasePath } from '../lib/path';
 
 const Contact = () => {
   const { t } = useTranslation();
   const { lang = 'de' } = useParams();
-  const withBasePath = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
   const contactConfig = getContactConfig(t);
+  const whatsappNumber = contactConfig.phone.replace(/\D/g, '');
+  const whatsappHref = `https://wa.me/${whatsappNumber}`;
 
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -140,10 +142,10 @@ const Contact = () => {
 
               {contactConfig.phone && (
                 <div className="flex items-center gap-4">
-                  <Phone size={20} strokeWidth={1.5} className="text-[#8b6d4b]" />
+                  <MessageCircle size={20} strokeWidth={1.5} className="text-[#8b6d4b]" />
                   <div>
                     <span className="block text-xs uppercase tracking-wider opacity-60 mb-1">{contactConfig.phoneLabel}</span>
-                    <a href={`tel:${contactConfig.phone}`} className="font-light hover:text-[#8b6d4b] transition-colors">
+                    <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="font-light hover:text-[#8b6d4b] transition-colors">
                       {contactConfig.phone}
                     </a>
                   </div>
@@ -203,7 +205,7 @@ const Contact = () => {
                 />
                 <span>
                   {contactConfig.privacyConsentText}{' '}
-                  <a href={withBasePath(`/${lang}/datenschutz`)} className="underline hover:text-white">
+                  <a href={toBasePath(`/${lang}/datenschutz`)} className="underline hover:text-white">
                     {t('common.privacyPolicy')}
                   </a>
                 </span>
@@ -237,7 +239,7 @@ const Contact = () => {
 
             {submitError && (
               <p className="mt-6 text-red-300 text-center font-light">
-                There was an error sending your message. Please try again.
+                {t('contact.submitErrorMessage')}
               </p>
             )}
           </div>

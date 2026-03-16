@@ -10,9 +10,9 @@
   },
   "hero_title": "Rationally\nreduce electricity costs\nwith intelligent\nbalcony solar systems",
   "hero_subtitle": "RATIONAL ENERGY INDEPENDENCE",
-  "cta_button": "Free balcony analysis",
+  "cta_button": "Free on-site consultation",
   "pricing_title": "Calculate your savings potential",
-  "contact_title": "Free balcony analysis",
+  "contact_title": "Free on-site consultation",
   "common": {
     "backToHome": "Back to homepage",
     "privacyPolicy": "Privacy policy",
@@ -248,12 +248,13 @@
     "scrollToSection": "Scroll to section {{index}}"
   },
   "contact": {
-    "heading": "Free balcony analysis",
-    "description": "Let us analyze your situation and recommend the optimal system setup for your household.",
+    "heading": "Free on-site consultation",
+    "description": "A specialist will visit you, check the installation conditions for a balcony power plant, and propose the optimal system configuration.",
     "locationLabel": "Location",
     "location": "Across Germany",
     "emailLabel": "E-mail",
     "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
     "form": {
       "namePlaceholder": "Your name",
       "emailPlaceholder": "your@email.com",
@@ -262,6 +263,7 @@
     "submitText": "Request analysis",
     "submittingText": "Sending...",
     "submittedText": "Sent",
+    "submitErrorMessage": "There was an error sending your message. Please try again.",
     "successMessage": "Thank you. We will contact you within 24 hours.",
     "privacyConsentText": "I have read the privacy policy and agree to the processing of my data for handling my request."
   },
@@ -273,6 +275,7 @@
     "newsletterButtonText": "Subscribe",
     "newsletterSubmittingText": "Sending...",
     "newsletterSuccessText": "Thank you for subscribing.",
+    "newsletterErrorText": "There was an error sending your subscription. Please try again.",
     "newsletterConsentText": "I want to receive the newsletter and accept the privacy policy.",
     "groups": {
       "product": "Product",
@@ -311,12 +314,66 @@
     },
     "privacyTitle": "Privacy policy",
     "privacy": {
-      "p1": "We process personal data only within the framework of applicable legal provisions (in particular GDPR and BDSG).",
-      "p2": "If you contact us via the contact form or newsletter, we process your data solely to handle your request or to send the newsletter.",
-      "p3": "Legal bases are Art. 6 para. 1 lit. a GDPR (consent) and Art. 6 para. 1 lit. b GDPR (pre-contractual measures).",
-      "p4": "You have the right to access, rectification, erasure, restriction of processing, and objection to processing of your data.",
-      "p5prefix": "For privacy inquiries, contact us at",
-      "note": "Note: This template does not replace individual legal advice. Please have final texts reviewed by legal counsel."
+      "intro": "We process personal data exclusively in accordance with applicable law, in particular the GDPR, the German Federal Data Protection Act (BDSG), and the TTDSG.",
+      "controller": {
+        "title": "1. Data Controller"
+      },
+      "sections": [
+        {
+          "title": "2. Hosting and Server Log Files",
+          "paragraphs": [
+            "This website is currently provided via GitHub Pages. The hosting provider is GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.",
+            "When you access the site, technically required connection data (for example IP address, date/time, requested URL, referrer, browser information) may be processed to ensure secure and stable operation.",
+            "Processing is based on Art. 6(1)(f) GDPR (legitimate interest in secure and stable website operation). GitHub privacy policy: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+          ]
+        },
+        {
+          "title": "3. Contact Form",
+          "paragraphs": [
+            "When you contact us via the contact form, we process the data you provide (name, email address, message) in order to handle your request.",
+            "We use FormSubmit for technical form delivery. Submitted data is transmitted to FormSubmit as a technical processor.",
+            "The legal basis is Art. 6(1)(b) GDPR (pre-contractual communication) and, where applicable, Art. 6(1)(f) GDPR (efficient request handling)."
+          ]
+        },
+        {
+          "title": "4. Recipients and Third-Country Transfers",
+          "paragraphs": [
+            "Your data is disclosed only to recipients that require it for the relevant purpose (for example hosting or form service providers).",
+            "A transfer to the USA cannot be excluded, in particular for hosting and technical form delivery.",
+            "Where data is transferred to the USA, we rely on appropriate safeguards under Art. 44 et seq. GDPR, in particular EU Standard Contractual Clauses (SCC)."
+          ]
+        },
+        {
+          "title": "5. Cookies and Similar Technologies",
+          "paragraphs": [
+            "At present, we do not use analytics or marketing cookies.",
+            "Technically necessary UI state information (for example temporary display settings) may be stored in the browser where required for operation of the website."
+          ]
+        },
+        {
+          "title": "6. Retention Periods and Deletion",
+          "paragraphs": [
+            "We store personal data only as long as necessary for the relevant purpose or as required by statutory retention obligations.",
+            "Contact inquiries are generally stored for 6 to 12 months after completion of processing, unless longer retention is legally required."
+          ]
+        },
+        {
+          "title": "7. Your Rights",
+          "paragraphs": [
+            "Subject to legal requirements, you have the right of access (Art. 15 GDPR), rectification (Art. 16 GDPR), erasure (Art. 17 GDPR), restriction of processing (Art. 18 GDPR), data portability (Art. 20 GDPR), and objection (Art. 21 GDPR).",
+            "Where processing is based on consent, you can withdraw that consent at any time with effect for the future.",
+            "You also have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR)."
+          ]
+        },
+        {
+          "title": "8. Obligation to Provide Data",
+          "paragraphs": [
+            "Providing personal data is generally voluntary. However, without certain information (for example an email address in the contact form), we may be unable to process your request."
+          ]
+        }
+      ],
+      "lastUpdated": "Last updated: 15.03.2026",
+      "note": ""
     }
   },
   "legalConfig": {

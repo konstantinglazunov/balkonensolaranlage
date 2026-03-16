@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Franklin:wght@200;300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,8 +34,8 @@
     --shibumi-accent-dark: #423d3f;
     --shibumi-accent-warm: #b9a79e;
     
-    --font-serif: 'DM Serif Display', serif;
-    --font-sans: 'Libre Franklin', sans-serif;
+    --font-serif: Georgia, "Times New Roman", serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
 }
 

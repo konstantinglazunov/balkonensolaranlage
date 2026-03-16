@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'sonner';
 import { getFooterConfig } from '../config';
+import { toBasePath } from '../lib/path';
 
 const iconMap: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number; className?: string }>> = {
   Instagram,
@@ -16,7 +17,6 @@ const Footer = () => {
   const { lang = 'de' } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
-  const withBasePath = (path: string): string => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
   const footerConfig = getFooterConfig(t, lang);
 
   const [email, setEmail] = useState('');
@@ -121,7 +121,7 @@ const Footer = () => {
                           }
                         }
                       }}
-                      href={link.href.startsWith('http') ? link.href : withBasePath(link.href.startsWith('#') ? `/${lang}/${link.href}` : link.href)}
+                      href={link.href.startsWith('http') ? link.href : toBasePath(link.href.startsWith('#') ? `/${lang}/${link.href}` : link.href)}
                       target={link.href.startsWith('http') ? '_blank' : undefined}
                       rel={link.href.startsWith('http') ? 'nofollow noopener noreferrer' : undefined}
                       className="text-[#696969] text-base font-light link-hover inline-block"
@@ -162,7 +162,7 @@ const Footer = () => {
                   />
                   <span>
                     {footerConfig.newsletterConsentText}{' '}
-                    <a href={withBasePath(`/${lang}/datenschutz`)} className="underline hover:text-black">
+                    <a href={toBasePath(`/${lang}/datenschutz`)} className="underline hover:text-black">
                       {t('common.privacyPolicy')}
                     </a>
                   </span>
@@ -185,7 +185,7 @@ const Footer = () => {
                 </button>
                 {submitError && (
                   <p className="text-xs text-red-500">
-                    There was an error sending your subscription. Please try again.
+                    {t('footer.newsletterErrorText')}
                   </p>
                 )}
               </form>
@@ -203,7 +203,7 @@ const Footer = () => {
               {footerConfig.legalLinks.map((link) => (
                 <a
                   key={link.label}
-                  href={withBasePath(link.href)}
+                  href={toBasePath(link.href)}
                   className="text-[#696969] text-xs hover:text-black transition-colors"
                 >
                   {link.label}
