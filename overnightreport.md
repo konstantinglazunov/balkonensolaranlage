@@ -71,3 +71,10 @@
 - If/when backend is available in repo, add automated discrepancy checks between DB aggregates and external provider exports.
 - Gradually convert `router.jsx` and `LanguageSwitcher.jsx` to `.tsx` for stronger type checks.
 
+## Completion Note — 2026-03-16T11:31:10+01:00
+
+- Commit created: `56fe85c`
+- Branch pushed: `main` -> `origin/main`
+- Post-push state: working tree clean
+- Additional observation: direct Railway/DB/Instantly runtime logs are still not available from this repository context; dedicated access credentials/integrations are required for end-to-end discrepancy audits against production telemetry.
+
