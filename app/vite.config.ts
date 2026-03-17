@@ -3,12 +3,9 @@ import react from "@vitejs/plugin-react"
 import { defineConfig } from "vite"
 import { inspectAttr } from 'kimi-plugin-inspect-react'
 
-const GITHUB_REPO_NAME = "BalkonenSolaranlage";
-const isGithubActionsBuild = process.env.GITHUB_ACTIONS === "true";
-
 // https://vite.dev/config/
 export default defineConfig({
-  base: isGithubActionsBuild ? `/${GITHUB_REPO_NAME}/` : '/',
+  base: "/",
   plugins: [inspectAttr(), react()],
   resolve: {
     alias: {

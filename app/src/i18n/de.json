@@ -314,7 +314,7 @@
     },
     "privacyTitle": "Datenschutzerklärung",
     "privacy": {
-      "intro": "Wir verarbeiten personenbezogene Daten ausschließlich im Rahmen der gesetzlichen Vorschriften, insbesondere der Datenschutz-Grundverordnung (DSGVO), des Bundesdatenschutzgesetzes (BDSG) und des TTDSG.",
+      "intro": "Wir verarbeiten personenbezogene Daten ausschließlich im Rahmen der gesetzlichen Vorschriften, insbesondere der Datenschutz-Grundverordnung (DSGVO), des Bundesdatenschutzgesetzes (BDSG) und des TTDSG. Diese Datenschutzerklärung gilt für die Website https://speicher-balkonkraftwerk.de.",
       "controller": {
         "title": "1. Verantwortlicher"
       },
@@ -322,7 +322,7 @@
         {
           "title": "2. Hosting und Server-Logfiles",
           "paragraphs": [
-            "Diese Website wird derzeit über GitHub Pages bereitgestellt. Hosting-Anbieter ist GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.",
+            "Diese Website unter https://speicher-balkonkraftwerk.de wird derzeit über GitHub Pages bereitgestellt. Hosting-Anbieter ist GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.",
             "Beim Aufruf der Website werden technisch erforderliche Verbindungsdaten (z. B. IP-Adresse, Datum/Uhrzeit, aufgerufene URL, Referrer, Browser-Informationen) verarbeitet, um den sicheren und stabilen Betrieb der Website zu gewährleisten.",
             "Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Betriebssicherheit und Stabilität). Datenschutzhinweise von GitHub: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
           ]
@@ -372,7 +372,7 @@
           ]
         }
       ],
-      "lastUpdated": "Stand: 15.03.2026",
+      "lastUpdated": "Stand: 17.03.2026",
       "note": ""
     }
   },

@@ -314,7 +314,7 @@
     },
     "privacyTitle": "Privacy policy",
     "privacy": {
-      "intro": "We process personal data exclusively in accordance with applicable law, in particular the GDPR, the German Federal Data Protection Act (BDSG), and the TTDSG.",
+      "intro": "We process personal data exclusively in accordance with applicable law, in particular the GDPR, the German Federal Data Protection Act (BDSG), and the TTDSG. This privacy policy applies to the website https://speicher-balkonkraftwerk.de.",
       "controller": {
         "title": "1. Data Controller"
       },
@@ -322,7 +322,7 @@
         {
           "title": "2. Hosting and Server Log Files",
           "paragraphs": [
-            "This website is currently provided via GitHub Pages. The hosting provider is GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.",
+            "This website at https://speicher-balkonkraftwerk.de is currently provided via GitHub Pages. The hosting provider is GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.",
             "When you access the site, technically required connection data (for example IP address, date/time, requested URL, referrer, browser information) may be processed to ensure secure and stable operation.",
             "Processing is based on Art. 6(1)(f) GDPR (legitimate interest in secure and stable website operation). GitHub privacy policy: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
           ]
@@ -372,7 +372,7 @@
           ]
         }
       ],
-      "lastUpdated": "Last updated: 15.03.2026",
+      "lastUpdated": "Last updated: 17.03.2026",
       "note": ""
     }
   },
